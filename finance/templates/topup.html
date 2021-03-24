@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Top-up
+{% endblock %}
+
+{% block main %}
+    <form action="/topup" method="post">
+        <div class="form-group">
+            <input autocomplete= "off" placeholder = "Amount" min = "1" class="form-control" name= "cash" type= "number">
+        </div>
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+{% endblock %}
